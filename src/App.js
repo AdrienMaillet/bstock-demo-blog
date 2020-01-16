@@ -9,9 +9,6 @@ import {
 import { BlogHome, NotFound, Post, Preview } from './pages';
 import { apiEndpoint } from './prismic-configuration';
 
-/**
- * Main app component
- */
 const App = () => {
   const repoNameArray = /([^/]+)\.cdn.prismic\.io\/api/.exec(apiEndpoint);
   const repoName = repoNameArray[1];
